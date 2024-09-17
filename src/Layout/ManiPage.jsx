@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import NavBar from "../Components/NavBar";
 import Slider from "../Components/Slider";
+import SpecialOffers from "../Components/SpecialOffers";
 
 export default function ManiPage(params) {
   return (
@@ -10,6 +11,7 @@ export default function ManiPage(params) {
         <Header></Header>
         <NavBar></NavBar>
         <Slider></Slider>
+        <SpecialOffers></SpecialOffers>
       </Link>
     </>
   );

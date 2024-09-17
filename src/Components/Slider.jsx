@@ -27,7 +27,7 @@ export default function Slider(params) {
   };
 
   return (
-    <div className=" max-w-full max-h-[624px] ">
+    <div className=" max-w-full h-[624px] ">
       <button
         onClick={handlePrev}
         className="absolute left-0 top-[60%] z-10 p-4 cursor-pointer text-white"
@@ -35,8 +35,13 @@ export default function Slider(params) {
         <FontAwesomeIcon icon={faArrowLeft} size="2x" />
       </button>
       <div className=" relative flex items-center justify-between ">
-        <div className=" absolute top-0 left-0 h-[624px] w-2/3 bg-mainColor rounded-tr-3xl "></div>
-        {console.log(corImg)}
+        <div className=" absolute top-0 left-0 h-[624px] w-2/3 bg-mainColor rounded-tr-3xl flex flex-col justify-center items-start pl-32 gap-14 ">
+          <div className="flex flex-col gap-2 font-semibold text-white text-5xl">
+            <span>Բարի գալու՜ստ</span>
+            <span> OVIO</span>
+          </div>
+          <span className=" text-white font-semibold text-xl">Բացահայտիր</span>
+        </div>
         <img
           src={images[corImg]}
           className="h-[624px] absolute right-0 top-0 rounded-l-full"
